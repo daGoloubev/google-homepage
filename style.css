@@ -8,11 +8,30 @@
 .search {
   margin: auto;
   width: 50%;
+  position: relative;
 }
 .search input{
   width: 100%;
   border-radius: 4px;
+  font-size: 24px;
+}
+.search input::-webkit-input-placeholder {
+    font-size: 12px;
+    padding-left: 6px;
+    padding-bottom: 10px;
 }
 .search input:hover {
   border: 3px solid rgba(162, 165, 170, 0.5);
+}
+
+.search button {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  padding: 0px;
+}
+.search button:hover {
+  cursor: pointer;
 }
